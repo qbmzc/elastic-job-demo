@@ -1,12 +1,12 @@
 server:
-  port: 8085
+  port: 0
 
 elasticjob:
   regCenter:
     serverLists: 192.168.70.58:2181
     #zookeeper 的ip:port
     #名命空间，自己定义就好了
-    namespace: my-job4
+    namespace: cong
   jobs:
     #你的这个定时任务名称，自定义名称
     myElasticJob:

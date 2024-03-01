@@ -4,6 +4,8 @@ import org.apache.shardingsphere.elasticjob.api.ShardingContext;
 import org.apache.shardingsphere.elasticjob.simple.job.SimpleJob;
 import org.springframework.stereotype.Component;
 
+import lombok.extern.slf4j.Slf4j;
+@Slf4j
 @Component
 public class MyJob implements SimpleJob {
 
@@ -11,20 +13,21 @@ public class MyJob implements SimpleJob {
     public void execute(ShardingContext context) {
         switch (context.getShardingItem()) {
             case 0:
-                System.out.println("a");
+                log.info("0");
                 break;
             case 1:
-                System.out.println("b");
+                log.info("1");
                 break;
             case 2:
-                System.out.println("c");
+                log.info("2");
                 break;
             case 3:
-                System.out.println("d");
+                log.info("3");
                 break;
             // case n: ...
             default:
-                System.out.println("aaa");
+                log.info("default");
+                break;
         }
     }
 }
