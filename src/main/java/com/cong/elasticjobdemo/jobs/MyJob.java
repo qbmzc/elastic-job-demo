@@ -1,4 +1,4 @@
-package com.cong.elasticjobdemo.temo;
+package com.cong.elasticjobdemo.jobs;
 
 import org.apache.shardingsphere.elasticjob.api.ShardingContext;
 import org.apache.shardingsphere.elasticjob.simple.job.SimpleJob;

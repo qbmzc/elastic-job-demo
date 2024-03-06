@@ -9,10 +9,10 @@ elasticjob:
     namespace: cong
   jobs:
     #你的这个定时任务名称，自定义名称
-    myElasticJob:
+    youElasticJob:
       #定时任务的全路径名
-      elasticJobClass: com.cong.elasticjobdemo.temo.MyJob
+      elasticJobClass: com.cong.elasticjobdemo.jobs.MyJob
       #定时任务执行的cron表达式
       cron: 0/5 * * * * ?
       #分片数量
-      shardingTotalCount: 10
+      shardingTotalCount: 1
